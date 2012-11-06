@@ -1,0 +1,7 @@
+(clear)
+(load "rings.scm")
+(start-audio "" 1024 44100)
+(gain 0.05)
+(desiredfps 24)
+(process "teknobomb.wav")
+(start-framedump "frames/output" "jpg")
