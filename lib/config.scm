@@ -4,5 +4,5 @@
 (gain 0.1)
 
 (ambient 0)
-(blur 0.2)
+(blur 0)
 (desiredfps 30)

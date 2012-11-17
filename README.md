@@ -1,6 +1,7 @@
-Fluxus scripts for wobblelovers vj set
+Fluxus scripts for wobblelovers lives vj set
 
 Fluxus software:
 http://www.pawfal.org/fluxus
 
-
+Music:
+http://www.wobblelovers.com
