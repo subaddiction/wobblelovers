@@ -1,0 +1,1 @@
+(shapeSchema bigring smallring kube)
