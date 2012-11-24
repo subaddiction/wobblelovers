@@ -16,9 +16,6 @@
 ; Include functions
 (load (string-append base_dir "lib/functions.scm"))
 
-(translate (vector 0 1000 0))
-(shapeSchema kube smallring bigring)
-
 (every-frame
 	(pulse base_dir shapeOne shapeTwo shapeThree)
 )
