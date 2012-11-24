@@ -5,7 +5,7 @@
 
 (define objList (directory-list (string-append base_dir "obj/")))
 
-; Load all 3d primitives
+; Load all 3d primitives - not yet implemented - wish to scan dir for .obj files
 ;(map
 ;	(lambda (object)
 ;	(define object (with-state (load-primitive (string-append base_dir (string-append "obj/" object)))))
@@ -21,11 +21,9 @@
 ; Add objects to library with:
 ; (define objID (with-state (load-primitive (string-append base_dir "obj/objFile.obj"))))
 
-; Define three dummy primitives
+; Define the dummy primitives
+(define bgPlane (build-plane))
 (define shapeOne (build-cube))
 (define shapeTwo (build-cube))
 (define shapeThree (build-cube))
 
-;(with-primitive shapeOne (translate (vector 0 -1000 0)))
-;(with-primitive shapeTwo (translate (vector 0 -1000 0)))
-;(with-primitive shapeThree (translate (vector 0 -1000 0)))
