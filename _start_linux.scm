@@ -7,7 +7,7 @@
 (define base_dir "/home/mrk25/fluxus/wobblelovers/")
 
 ; Include general config
-(load (string-append base_dir "lib/config.scm"))
+(load (string-append base_dir "lib/config_linux.scm"))
 
 
 ; Include primitives library
