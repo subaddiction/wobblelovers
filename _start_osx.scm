@@ -24,5 +24,5 @@
 
 ; Fire animations
 (every-frame
-	(pulse base_dir bgPlane shapeOne shapeTwo shapeThree)
+	(pulse base_dir bgPlane shapeOne shapeTwo shapeThree RedLightness GreenLightness BlueLightness Scale RotX RotY RotZ)
 )

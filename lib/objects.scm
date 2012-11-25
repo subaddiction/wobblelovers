@@ -21,9 +21,23 @@
 ; Add objects to library with:
 ; (define objID (with-state (load-primitive (string-append base_dir "obj/objFile.obj"))))
 
+
 ; Define the dummy primitives
 (define bgPlane (build-plane))
 (define shapeOne (build-cube))
 (define shapeTwo (build-cube))
 (define shapeThree (build-cube))
+
+;Define Initial colors
+(define RedLightness 0.5)
+(define GreenLightness 0.25)
+(define BlueLightness 0.25)
+
+;Define initial tranformation settings
+(define Scale 0.2)
+(define RotX -60)
+(define RotY 60)
+(define RotZ -60)
+
+
 

@@ -1,1 +1,0 @@
-(shapeSchema kube kube kube)

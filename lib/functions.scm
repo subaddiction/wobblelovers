@@ -1,30 +1,35 @@
 ; Primitives switcher
 (define (shapeSchema assignPlane assignOne assignTwo assignThree)
 
-(translate (vector 0 -1000 0))
-	    (set! bgPlane assignPlane)
-	    (set! shapeOne assignOne)
-	    (set! shapeTwo assignTwo)
-	    (set! shapeThree assignThree)
+	(translate (vector 0 -1000 0))
+	(set! bgPlane assignPlane)
+	(set! shapeOne assignOne)
+	(set! shapeTwo assignTwo)
+	(set! shapeThree assignThree)
+)
+
+; Color switcher
+(define (colorSchema Red Green Blue)
+
+	(set! RedLightness Red)
+	(set! GreenLightness Green)
+	(set! BlueLightness Blue)
+)
+
+; Transformations intensity
+(define (transformSchema S X Y Z)
+
+	(set! Scale S)
+	(set! RotX X)
+	(set! RotY Y)
+	(set! RotZ Z)
 )
 
 ; Primitive movement
-(define (pulse base_dir bgPlane shapeOne shapeTwo shapeThree)    
+(define (pulse base_dir bgPlane shapeOne shapeTwo shapeThree pulseRedLightness pulseGreenLightness pulseBlueLightness pulseScale pulseRotX pulseRotY pulseRotZ)    
 	
 	; Include keybindings
 	(load (string-append base_dir "lib/keys.scm"))
-	
-	
-	; Assign colors
-	(define pulseRedLightness 0.5)
-	(define pulseGreenLightness 0.25)
-	(define pulseBlueLightness 0.25)
-
-	(define pulseScale 0.2)
-	(define pulseRotX -60)
-	(define pulseRotY 60)
-	(define pulseRotZ -60)
-	
 	
 	; Move shapes to visible area
 	(with-primitive bgPlane (translate (vector 0 1000 -10)))
