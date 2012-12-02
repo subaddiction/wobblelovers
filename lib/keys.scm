@@ -1,7 +1,7 @@
 ; Shape schemes
 (when (key-pressed "q") (shapeSchema bgPlane kube smallring bigring))
 
-(when (key-pressed "w") (shapeSchema bgPlane kube kube kube))
+(when (key-pressed "w") (shapeSchema bgPlane pandaparty bigring bigring))
 
 (when (key-pressed "e") (shapeSchema bgPlane smallring smallring smallring))
 

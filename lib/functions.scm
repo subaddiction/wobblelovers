@@ -46,12 +46,15 @@
         
         (translate (vector (gh 3) (gh 3) (gh 3)))
         
-        (rotate (vector 0 -45 0))
+        
         (rotate (vector 0 (* 22.5 (gh 0) (sin (time))) 0))
-        (rotate (vector (* (gh 0) pulseRotX) (* (gh 0) pulseRotY) (* (gh 0) pulseRotZ)))
+        (rotate (vector (gh 16) (gh 16) (gh 16)))
         
         (colour (vector (* (gh 0) pulseRedLightness) (* (gh 2) pulseGreenLightness) (* (gh 4) pulseBlueLightness)))
         (draw-instance shapeOne)
+        
+        (rotate (vector 0 -45 0))
+        (rotate (vector (* 12 (gh 0) (sin (time))) (* 12 (gh 0) (sin (time))) (* 12 (gh 0) (sin (time)))))
         
         (rotate (vector (* (gh 0) pulseRotZ) (* (gh 0) pulseRotY) (* (gh 0) pulseRotX)))
         

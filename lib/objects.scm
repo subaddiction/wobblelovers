@@ -18,6 +18,10 @@
 (define smallring (with-state (load-primitive (string-append base_dir "obj/smallring.obj"))))
 (define bigring (with-state (load-primitive (string-append base_dir "obj/bigring.obj"))))
 
+(define pandaparty (with-state (load-primitive (string-append base_dir "obj/panda_party.obj"))))
+(define pandapartyinner (with-state (load-primitive (string-append base_dir "obj/panda_party_inner.obj"))))
+(define pandapartyouter (with-state (load-primitive (string-append base_dir "obj/panda_party_outer.obj"))))
+
 ; Add objects to library with:
 ; (define objID (with-state (load-primitive (string-append base_dir "obj/objFile.obj"))))
 
