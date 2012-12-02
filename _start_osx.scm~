@@ -4,10 +4,10 @@
 
 
 ; Base directory
-(define base_dir "/home/mrk25/fluxus/wobblelovers/")
+(define base_dir "/Users/Shared/fluxus/wobblelovers/")
 
 ; Include general config
-(load (string-append base_dir "lib/config_linux.scm"))
+(load (string-append base_dir "lib/config_osx.scm"))
 
 
 ; Include primitives library
@@ -24,6 +24,5 @@
 
 ; Fire animations
 (every-frame
-    ;(begin (display (midi-peek)) (newline))
     (pulse base_dir bgPlane shapeOne shapeTwo shapeThree RedLightness GreenLightness BlueLightness Scale RotX RotY RotZ)
 )

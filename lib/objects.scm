@@ -22,6 +22,15 @@
 (define pandapartyinner (with-state (load-primitive (string-append base_dir "obj/panda_party_inner.obj"))))
 (define pandapartyouter (with-state (load-primitive (string-append base_dir "obj/panda_party_outer.obj"))))
 
+(define piramide (with-state (load-primitive (string-append base_dir "obj/piramide.obj"))))
+(define triangolo (with-state (load-primitive (string-append base_dir "obj/triangolo.obj"))))
+(define pandasimple (with-state (load-primitive (string-append base_dir "obj/pandasimple.obj"))))
+(define piramidi (with-state (load-primitive (string-append base_dir "obj/piramidi.obj"))))
+(define triangoli (with-state (load-primitive (string-append base_dir "obj/triangoli.obj"))))
+
+(define piramidiring (with-state (load-primitive (string-append base_dir "obj/piramidiring.obj"))))
+(define triangoliring (with-state (load-primitive (string-append base_dir "obj/triangoliring.obj"))))
+
 ; Add objects to library with:
 ; (define objID (with-state (load-primitive (string-append base_dir "obj/objFile.obj"))))
 

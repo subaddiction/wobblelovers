@@ -24,5 +24,6 @@
 
 ; Fire animations
 (every-frame
+    ;(begin (display (midi-peek)) (newline))
     (pulse base_dir bgPlane shapeOne shapeTwo shapeThree RedLightness GreenLightness BlueLightness Scale RotX RotY RotZ)
 )
