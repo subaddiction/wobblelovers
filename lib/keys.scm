@@ -22,39 +22,63 @@
 )
 
 ; Shape schemes
-(when (key-pressed "q") (shapeSchema bgPlane kube smallring bigring))
+(when (key-pressed "q") (shapeSchema bgPlane wobble piramidi triangoli))
 
-(when (key-pressed "w") (shapeSchema bgPlane pandapartyinner piramide bigring))
+(when (key-pressed "w") (shapeSchema bgPlane pandapartyinner bigring piramide))
 
 (when (key-pressed "e") (shapeSchema bgPlane pandapartyouter triangolo piramide))
 
-(when (key-pressed "r") (shapeSchema bgPlane pandasimple piramide triangolo))
+(when (key-pressed "r") (shapeSchema bgPlane piramidi smallring bigring))
 
-(when (key-pressed "t") (shapeSchema bgPlane piramidi pandasimple triangolo))
+(when (key-pressed "t") (shapeSchema bgPlane triangoli bigring triangolo))
 
-(when (key-pressed "y") (shapeSchema bgPlane triangoli pandasimple triangolo))
+(when (key-pressed "y") (shapeSchema bgPlane wl_logo triangolo triangoliring))
 
-(when (key-pressed "u") (shapeSchema bgPlane triangoli triangolo bigring))
+(when (key-pressed "u") (shapeSchema bgPlane wr_logo piramidiring piramide))
 
-(when (key-pressed "u") (shapeSchema bgPlane triangoli pandasimple bigring))
+(when (key-pressed "u") (shapeSchema bgPlane baila triangoliring piramidiring))
 
-(when (key-pressed "i") (shapeSchema bgPlane triangoli piramide pandasimple))
+(when (key-pressed "i") (shapeSchema bgPlane meduele triangoli piramidi))
 
-(when (key-pressed "o") (shapeSchema bgPlane piramidi pandasimple triangolo))
+(when (key-pressed "o") (shapeSchema bgPlane swagger triangolo piramide))
 
-(when (key-pressed "p") (shapeSchema bgPlane piramidi smallring bigring))
-
-
+(when (key-pressed "p") (shapeSchema bgPlane yo triangolo piramide))
 
 
 
 (when (key-pressed "a") (shapeSchema bgPlane pandasimple piramidiring piramide))
 
-(when (key-pressed "s") (shapeSchema bgPlane pandapartyouter triangoliring piramide))
+(when (key-pressed "s") (shapeSchema bgPlane triangoli piramide triangolo))
 
 (when (key-pressed "d") (shapeSchema bgPlane pandasimple piramidiring triangoliring))
 
 (when (key-pressed "f") (shapeSchema bgPlane piramidi smallring bigring))
+
+(when (key-pressed "g") (shapeSchema bgPlane pandasimple triangolo piramide))
+
+(when (key-pressed "h") (shapeSchema bgPlane piramidi pandasimple triangolo))
+
+(when (key-pressed "j") (shapeSchema bgPlane triangoli pandasimple piramide))
+
+(when (key-pressed "k") (shapeSchema bgPlane piramidi triangolo triangoliring ))
+
+(when (key-pressed "l") (shapeSchema bgPlane triangoli smallring piramidiring))
+
+
+
+(when (key-pressed "z") (shapeSchema bgPlane kube smallring bigring))
+
+(when (key-pressed "x") (shapeSchema bgPlane kube bigring piramide))
+
+(when (key-pressed "c") (shapeSchema bgPlane ))
+
+(when (key-pressed "v") (shapeSchema bgPlane ))
+
+(when (key-pressed "b") (shapeSchema bgPlane ))
+
+(when (key-pressed "n") (shapeSchema bgPlane ))
+
+(when (key-pressed "m") (shapeSchema bgPlane ))
 
 
 

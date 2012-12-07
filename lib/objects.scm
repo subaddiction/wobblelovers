@@ -18,18 +18,31 @@
 (define smallring (with-state (load-primitive (string-append base_dir "obj/smallring.obj"))))
 (define bigring (with-state (load-primitive (string-append base_dir "obj/bigring.obj"))))
 
-(define pandaparty (with-state (load-primitive (string-append base_dir "obj/panda_party.obj"))))
-(define pandapartyinner (with-state (load-primitive (string-append base_dir "obj/panda_party_inner.obj"))))
-(define pandapartyouter (with-state (load-primitive (string-append base_dir "obj/panda_party_outer.obj"))))
+
 
 (define piramide (with-state (load-primitive (string-append base_dir "obj/piramide.obj"))))
 (define triangolo (with-state (load-primitive (string-append base_dir "obj/triangolo.obj"))))
 (define pandasimple (with-state (load-primitive (string-append base_dir "obj/pandasimple.obj"))))
+
 (define piramidi (with-state (load-primitive (string-append base_dir "obj/piramidi.obj"))))
 (define triangoli (with-state (load-primitive (string-append base_dir "obj/triangoli.obj"))))
 
 (define piramidiring (with-state (load-primitive (string-append base_dir "obj/piramidiring.obj"))))
 (define triangoliring (with-state (load-primitive (string-append base_dir "obj/triangoliring.obj"))))
+
+
+;lettering
+;(define pandaparty (with-state (load-primitive (string-append base_dir "obj/panda_party.obj"))))
+(define pandapartyinner (with-state (load-primitive (string-append base_dir "obj/panda_party_inner.obj"))))
+(define pandapartyouter (with-state (load-primitive (string-append base_dir "obj/panda_party_outer.obj"))))
+(define wl_logo (with-state (load-primitive (string-append base_dir "obj/wl_logo.obj"))))
+(define wr_logo (with-state (load-primitive (string-append base_dir "obj/wr_logo.obj"))))
+(define wobble (with-state (load-primitive (string-append base_dir "obj/wobble.obj"))))
+(define baila (with-state (load-primitive (string-append base_dir "obj/baila.obj"))))
+(define meduele (with-state (load-primitive (string-append base_dir "obj/meduele.obj"))))
+(define swagger (with-state (load-primitive (string-append base_dir "obj/swagger.obj"))))
+(define yo (with-state (load-primitive (string-append base_dir "obj/yo.obj"))))
+
 
 ; Add objects to library with:
 ; (define objID (with-state (load-primitive (string-append base_dir "obj/objFile.obj"))))
