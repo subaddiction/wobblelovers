@@ -11,6 +11,6 @@
 (load (string-append base_dir "lib/objects.scm"))
 
 (ambient 0)
-(blur 0)
-(desiredfps 24)
+;(blur 0)
+;(desiredfps 24)
 
