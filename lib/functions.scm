@@ -31,8 +31,17 @@
 	(set! RotZ Z)
 )
 
+; Blur
+;(define (setBlur midiValue)
+;	(set! midiBlur midiValue)
+;)
+
 ; Primitive movement
 (define (pulse base_dir bgPlane shapeOne shapeTwo shapeThree pulseRedLightness pulseGreenLightness pulseBlueLightness pulseScale pulseRotX pulseRotY pulseRotZ)    
+	
+	;set Blur
+	(blur 1)
+	
 	
 	; Include keybindings
 	(load (string-append base_dir "lib/keys.scm"))
@@ -62,17 +71,17 @@
         ; Animate shapes
         (scale (vector (* (gh 0) pulseScale) (* (gh 0) pulseScale) (* (gh 0) pulseScale)))
         
-        (translate (vector (gh 3) (gh 3) (gh 3)))
+        (translate (vector (* 0.01 pulseRotX (gh 4)) (* 0.01 pulseRotY (gh 4)) (* 0.01 pulseRotZ (gh 4))))
         
         
-        (rotate (vector (* 2 (gh 8) pulseRotX) (* (gh 0) (sin (time)) pulseRotY) (* 2 (gh 8) pulseRotZ)))
+        (rotate (vector (- (* 1.5 (gh 8) pulseRotX) 0.75) (- (* 3 (gh 0) (sin (time)) pulseRotY) 1.5) (- (* 0.3 (gh 8) pulseRotZ) 0.15)))
         (rotate (vector (gh 16) (gh 16) (gh 16)))
         
         (colour (vector (* (gh 0) pulseRedLightness) (* (gh 2) pulseGreenLightness) (* (gh 4) pulseBlueLightness)))
         (draw-instance shapeOne)
         
-        
-        (rotate (vector (* 12 (gh 0) (sin (time))) (* 12 (gh 0) (sin (time))) (* 12 (gh 0) (sin (time)))))
+	
+        (rotate (vector (* 6 (gh 0) pulseRotX) (* 6 (gh 0) pulseRotY) (* 6 (gh 0) pulseRotZ)))
         
         (rotate (vector (* (gh 0) pulseRotZ) (* (gh 0) pulseRotY) (* (gh 0) pulseRotX)))
         
@@ -80,8 +89,8 @@
         (draw-instance shapeTwo)
         
         
-        ;(rotate (vector -45 0 0))
-        (rotate (vector (* (gh 0) pulseRotY) (* (gh 1) pulseRotZ) (* (gh 1) pulseRotX)))
+        ;(rotate (vector 0 -90 0))
+        (rotate (vector (* 6 (gh 1) pulseRotY) (* 6 (gh 1) pulseRotZ) (* 6 (gh 1) pulseRotX)))
         
         (colour (vector (* (gh 2) pulseRedLightness) (* (gh 4) pulseGreenLightness) (* (gh 0) pulseBlueLightness)))
         (draw-instance shapeThree)

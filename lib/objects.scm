@@ -30,6 +30,19 @@
 (define piramidiring (with-state (load-primitive (string-append base_dir "obj/piramidiring.obj"))))
 (define triangoliring (with-state (load-primitive (string-append base_dir "obj/triangoliring.obj"))))
 
+(define piramidisphere (with-state (load-primitive (string-append base_dir "obj/piramidisphere.obj"))))
+(define triangolisphere (with-state (load-primitive (string-append base_dir "obj/triangolisphere.obj"))))
+
+(define triA (with-state (load-primitive (string-append base_dir "obj/triA.obj"))))
+(define triB (with-state (load-primitive (string-append base_dir "obj/triB.obj"))))
+(define triC (with-state (load-primitive (string-append base_dir "obj/triC.obj"))))
+
+(define hexA (with-state (load-primitive (string-append base_dir "obj/hexA.obj"))))
+(define moleculeA (with-state (load-primitive (string-append base_dir "obj/moleculeA.obj"))))
+(define nautilus (with-state (load-primitive (string-append base_dir "obj/nautilus.obj"))))
+
+
+
 
 ;lettering
 ;(define pandaparty (with-state (load-primitive (string-append base_dir "obj/panda_party.obj"))))
