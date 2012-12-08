@@ -37,11 +37,7 @@
 ;)
 
 ; Primitive movement
-(define (pulse base_dir bgPlane shapeOne shapeTwo shapeThree pulseRedLightness pulseGreenLightness pulseBlueLightness pulseScale pulseRotX pulseRotY pulseRotZ)    
-	
-	;set Blur
-	(blur 1)
-	
+(define (pulse base_dir bgPlane shapeOne shapeTwo shapeThree pulseRedLightness pulseGreenLightness pulseBlueLightness pulseScale pulseRotX pulseRotY pulseRotZ)
 	
 	; Include keybindings
 	(load (string-append base_dir "lib/keys.scm"))
