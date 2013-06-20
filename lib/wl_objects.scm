@@ -18,9 +18,6 @@
 (define triangolo (with-state (load-primitive (string-append base_dir "obj/triangolo.obj"))))
 (with-primitive triangolo (hide 1))
 
-(define triangoloBig (with-state (load-primitive (string-append base_dir "obj/triangoloBig.obj"))))
-(with-primitive triangoloBig (hide 1))
-
 (define pandasimple (with-state (load-primitive (string-append base_dir "obj/pandasimple.obj"))))
 (with-primitive pandasimple (hide 1))
 
@@ -60,13 +57,10 @@
 (with-primitive hexA (hide 1))
 
 (define moleculeA (with-state (load-primitive (string-append base_dir "obj/moleculeA.obj"))))
-(with-primitive moleculeA (hide 1))
+(with-primitive hexA (hide 1))
 
 (define nautilus (with-state (load-primitive (string-append base_dir "obj/nautilus.obj"))))
 (with-primitive nautilus (hide 1))
-
-(define subaddiction (with-state (load-primitive (string-append base_dir "obj/subaddiction.obj"))))
-(with-primitive subaddiction (hide 1))
 
 
 
@@ -84,7 +78,7 @@
 (with-primitive wl_logo (hide 1))
 
 (define wr_logo (with-state (load-primitive (string-append base_dir "obj/wr_logo.obj"))))
-(with-primitive wr_logo (hide 1))
+(with-primitive * (hide 1))
 
 (define wobble (with-state (load-primitive (string-append base_dir "obj/wobble.obj"))))
 (with-primitive wobble (hide 1))
@@ -102,51 +96,9 @@
 (with-primitive yo (hide 1))
 
 
-;new wobblelovers vectors
-(define partyeverynight (with-state (load-primitive (string-append base_dir "obj/partyeverynight.obj"))))
-(with-primitive partyeverynight (hide 1))
-
-(define partybass (with-state (load-primitive (string-append base_dir "obj/partybass.obj"))))
-(with-primitive partybass (hide 1))
-
-(define getithot (with-state (load-primitive (string-append base_dir "obj/getithot.obj"))))
-(with-primitive getithot (hide 1))
-
-(define woah (with-state (load-primitive (string-append base_dir "obj/woah.obj"))))
-(with-primitive woah (hide 1))
-
-(define dontwonna (with-state (load-primitive (string-append base_dir "obj/dontwonna.obj"))))
-(with-primitive dontwonna (hide 1))
-
-(define areyoukiddingme (with-state (load-primitive (string-append base_dir "obj/areyoukiddingme.obj"))))
-(with-primitive areyoukiddingme (hide 1))
-
-(define bounce (with-state (load-primitive (string-append base_dir "obj/bounce.obj"))))
-(with-primitive bounce (hide 1))
-
-(define move (with-state (load-primitive (string-append base_dir "obj/move.obj"))))
-(with-primitive move (hide 1))
-
-(define igotmyeyesonyou (with-state (load-primitive (string-append base_dir "obj/igotmyeyesonyou.obj"))))
-(with-primitive igotmyeyesonyou (hide 1))
-
-(define swing (with-state (load-primitive (string-append base_dir "obj/swing.obj"))))
-(with-primitive swing (hide 1))
-
-(define jumparound (with-state (load-primitive (string-append base_dir "obj/jumparound.obj"))))
-(with-primitive jumparound (hide 1))
-
-(define wobblerap (with-state (load-primitive (string-append base_dir "obj/wobblerap.obj"))))
-(with-primitive wobblerap (hide 1))
-
-
-
-
-
 
 ; Add objects to library with:
 ; (define objID (with-state (load-primitive (string-append base_dir "obj/objFile.obj"))))
-;(with-primitive objID (hide 1))
 
 
 ; Define the dummy primitives

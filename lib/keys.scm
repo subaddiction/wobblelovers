@@ -10,91 +10,147 @@
 	(gain (midi-ccn 1 10))
 	
 	; knob3
-	;(setBlur (midi-ccn 2 10))
-	
+	(set! baseScale (* 100 (midi-ccn 2 10)))
 	
 	; Fader 1 2 3 RGB
 	(colorSchema (midi-ccn 0 7) (midi-ccn 1 7) (midi-ccn 2 7))
 	
 	; knob3 scale - Fader 456 Rotate
-	(transformSchema baseScale (- (* 36 (midi-ccn 3 7)) 18) (- (* 36 (midi-ccn 4 7)) 18) (- (* 36 (midi-ccn 5 7)) 18))
+	(transformSchema (* baseScale (midi-cc 2 10)) (- (* 36 (midi-ccn 3 7)) 18) (- (* 36 (midi-ccn 4 7)) 18) (- (* 36 (midi-ccn 5 7)) 18))
 	
 )
 
+
+; Testing calls
+;;;(define (testConf)
+;;;	(desiredfps 24)
+;;;	(gain 0.5)
+;;;	(set! baseScale 100)
+;;;	(colorSchema 8 6 8)
+;;;	(transformSchema 100 0 0 0)
+;;;)
+;;;(when (key-pressed ".") (testConf))
+
+
 ; Shape schemes
-(when (key-pressed "q") (shapeSchema bgPlane wobble piramidi triangolisphere))
-
-(when (key-pressed "w") (shapeSchema bgPlane pandapartyinner piramide triangolisphere))
-
-(when (key-pressed "e") (shapeSchema bgPlane pandapartyouter triangolo piramidi))
-
-(when (key-pressed "r") (shapeSchema bgPlane wr_logo piramide piramidiring))
-
-(when (key-pressed "t") (shapeSchema bgPlane wl_logo triangolo triangoliring))
-
-(when (key-pressed "y") (shapeSchema bgPlane wobble triangoliring triangoli))
-
-(when (key-pressed "u") (shapeSchema bgPlane baila triangoliring piramidiring))
-
-(when (key-pressed "i") (shapeSchema bgPlane meduele triangoli piramidi))
-
-(when (key-pressed "o") (shapeSchema bgPlane swagger piramide triangolo))
-
-(when (key-pressed "p") (shapeSchema bgPlane yo triangolo piramidisphere))
 
 
+(when (key-pressed "q") (shapeSchema partyeverynight piramidiring triangolisphere))
 
-(when (key-pressed "a") (shapeSchema bgPlane pandasimple piramide piramidiring))
+(when (key-pressed "w") (shapeSchema wl_logo piramidisphere triangoliring))
 
-(when (key-pressed "s") (shapeSchema bgPlane triangolo piramidi triangolisphere))
+(when (key-pressed "e") (shapeSchema partybass triangoloBig piramidiring))
 
-(when (key-pressed "d") (shapeSchema bgPlane pandasimple piramidiring triangoliring))
+(when (key-pressed "r") (shapeSchema getithot triangoliring triangoloBig))
 
-(when (key-pressed "f") (shapeSchema bgPlane triangolo triangoliring triangolisphere))
+(when (key-pressed "t") (shapeSchema woah triangoloBig piramidiring))
 
-(when (key-pressed "g") (shapeSchema bgPlane pandasimple triangolo piramidisphere))
+(when (key-pressed "y") (shapeSchema dontwonna triangoloBig triangoliring))
 
-(when (key-pressed "h") (shapeSchema bgPlane piramidisphere piramidi triangoliring))
+(when (key-pressed "u") (shapeSchema areyoukiddingme triangoliring piramidisphere))
 
-(when (key-pressed "j") (shapeSchema bgPlane triangolisphere triangoli piramidiring))
+(when (key-pressed "i") (shapeSchema bounce piramidiring triangolisphere))
 
-(when (key-pressed "k") (shapeSchema bgPlane triangoliring triangolo piramidi))
+(when (key-pressed "o") (shapeSchema move triangolisphere piramidiring))
 
-(when (key-pressed "l") (shapeSchema bgPlane piramidiring triangolo triangoli))
-
-
-
-(when (key-pressed "z") (shapeSchema bgPlane kube smallring bigring))
-
-(when (key-pressed "x") (shapeSchema bgPlane triangolisphere triA piramidi))
-
-(when (key-pressed "c") (shapeSchema bgPlane piramidisphere triB triangoli))
-
-(when (key-pressed "v") (shapeSchema bgPlane triangolisphere triC piramidiring))
-
-(when (key-pressed "b") (shapeSchema bgPlane hexA triangoliring piramidi))
-
-(when (key-pressed "n") (shapeSchema bgPlane piramidisphere moleculeA triangoli))
-
-(when (key-pressed "m") (shapeSchema bgPlane triangolisphere nautilus piramidi))
+(when (key-pressed "p") (shapeSchema swagger triangoliring piramidisphere))
 
 
 
 
 
-; Color schemes
-;(when (key-pressed "z") (colorSchema 0.5 0.25 0.25))
+(when (key-pressed "a") (shapeSchema pandapartyouter triangoliring bigring))
 
-;(when (key-pressed "x") (colorSchema 0.25 0.75 0.25))
+(when (key-pressed "s") (shapeSchema swing piramidiring triangolisphere))
 
-;(when (key-pressed "c") (colorSchema  0.5 0.25 0.75))
+(when (key-pressed "d") (shapeSchema jumparound triangoliring piramidiring))
 
-; Transform schemes
+(when (key-pressed "f") (shapeSchema wobblerap triangolisphere piramidiring))
 
-;(when (key-pressed "v") (transformSchema baseScale 36 36 36))
+(when (key-pressed "g") (shapeSchema triangoloBig bigring piramidisphere))
 
-;(when (key-pressed "b") (transformSchema baseScale -36 -36 -36))
+(when (key-pressed "h") (shapeSchema triangoloBig piramidiring triangolisphere))
 
-;(when (key-pressed "n") (transformSchema baseScale 36 36 -36))
+(when (key-pressed "j") (shapeSchema triA bigring triangoliring))
 
-;(when (key-pressed "m") (transformSchema baseScale -36 36 -36))
+(when (key-pressed "k") (shapeSchema triB triangoliring piramidiring))
+
+(when (key-pressed "l") (shapeSchema triC piramidisphere triangolisphere))
+
+
+
+(when (key-pressed "z") (shapeSchema kube smallring bigring))
+
+(when (key-pressed "x") (shapeSchema triangolisphere triA piramidiring))
+
+(when (key-pressed "c") (shapeSchema triangoliring hexA piramidisphere))
+
+(when (key-pressed "v") (shapeSchema piramidisphere moleculeA bigring))
+
+(when (key-pressed "b") (shapeSchema triangolisphere nautilus bigring))
+
+(when (key-pressed "n") (shapeSchema subaddiction triangoliring bigring))
+
+(when (key-pressed "m") (shapeSchema subaddiction triangolisphere triangolisphere))
+
+
+;OLD
+;;;;;(when (key-pressed "q") (shapeSchema wobble piramidi triangolisphere))
+
+;;;;;(when (key-pressed "w") (shapeSchema pandapartyinner piramide triangolisphere))
+
+;;;;;(when (key-pressed "e") (shapeSchema pandapartyouter triangolo piramidi))
+
+;;;;;(when (key-pressed "r") (shapeSchema wr_logo piramide piramidiring))
+
+;;;;;(when (key-pressed "t") (shapeSchema wl_logo triangolo triangoliring))
+
+;;;;;(when (key-pressed "y") (shapeSchema wobble triangoliring triangoli))
+
+;;;;;(when (key-pressed "u") (shapeSchema baila triangoliring piramidiring))
+
+;;;;;(when (key-pressed "i") (shapeSchema meduele triangoli piramidi))
+
+;;;;;(when (key-pressed "o") (shapeSchema swagger piramide triangolo))
+
+;;;;;(when (key-pressed "p") (shapeSchema yo triangolo piramidisphere))
+
+
+
+;;;;;(when (key-pressed "a") (shapeSchema pandasimple piramide piramidiring))
+
+;;;;;(when (key-pressed "s") (shapeSchema triangolo piramidi triangolisphere))
+
+;;;;;(when (key-pressed "d") (shapeSchema pandasimple piramidiring triangoliring))
+
+;;;;;(when (key-pressed "f") (shapeSchema triangolo triangoliring triangolisphere))
+
+;;;;;(when (key-pressed "g") (shapeSchema pandasimple triangolo piramidisphere))
+
+;;;;;(when (key-pressed "h") (shapeSchema piramidisphere piramidi triangoliring))
+
+;;;;;(when (key-pressed "j") (shapeSchema triangolisphere triangoli piramidiring))
+
+;;;;;(when (key-pressed "k") (shapeSchema triangoliring triangolo piramidi))
+
+;;;;;(when (key-pressed "l") (shapeSchema piramidiring triangolo triangoli))
+
+
+
+;;;;;(when (key-pressed "z") (shapeSchema partyeverynight smallring bigring))
+
+;;;;;(when (key-pressed "x") (shapeSchema triangolisphere triA piramidi))
+
+;;;;;(when (key-pressed "c") (shapeSchema piramidisphere triB triangoli))
+
+;;;;;(when (key-pressed "v") (shapeSchema triangolisphere triC piramidiring))
+
+;;;;;(when (key-pressed "b") (shapeSchema hexA triangoliring piramidi))
+
+;;;;;(when (key-pressed "n") (shapeSchema piramidisphere moleculeA triangoli))
+
+;;;;;(when (key-pressed "m") (shapeSchema triangolisphere nautilus piramidi))
+
+
+
+

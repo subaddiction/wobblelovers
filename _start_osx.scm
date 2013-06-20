@@ -18,11 +18,8 @@
 (load (string-append base_dir "lib/functions.scm"))
 
 
-; Move default shapes to visible area
-(translate (vector 0 1000 0))
-
-
 ; Fire animations
 (every-frame
-	(pulse base_dir bgPlane shapeOne shapeTwo shapeThree RedLightness GreenLightness BlueLightness Scale RotX RotY RotZ)
+	;(begin (display (midi-peek)) (newline))
+	(pulse base_dir shapeOne shapeTwo shapeThree RedLightness GreenLightness BlueLightness Scale RotX RotY RotZ)
 )
